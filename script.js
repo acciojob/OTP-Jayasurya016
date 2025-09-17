@@ -1,6 +1,5 @@
-//your JS code here. If required.
 document.addEventListener('DOMContentLoaded', () => {
-    const inputs = document.querySelectorAll('.otp-input');
+    const inputs = document.querySelectorAll('.code');
     
     // Add event listeners to each input field
     inputs.forEach((input, index) => {
