@@ -1,1 +1,71 @@
 /*  your css code here. If applicable */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.otp-form {
+    background: #fff;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+#verification_heading {
+    font-weight: 700;
+    color: #333;
+}
+
+#verification_subtext {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+#verification_subtext strong {
+    color: #007bff;
+}
+
+.otp-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.otp-input {
+    width: 40px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    -moz-appearance: textfield; /* Hide number arrows in Firefox */
+}
+
+.otp-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Hide number arrows for Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.small-text {
+    font-size: 12px;
+    color: #999;
+    margin-top: 25px;
+}
